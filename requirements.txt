@@ -1,0 +1,12 @@
+Flask==2.3.2
+Werkzeug==2.3.7
+PyJWT==2.8.0
+requests==2.31.0
+psycopg2==2.9.9
+flask_cors==4.0.0
+Flask-SocketIO==5.3.6  # For WebSocket communication
+eventlet==0.33.3      # Asynchronous server (alternative: gevent)
+SQLAlchemy==2.0.25    # ORM for database interaction
+# MongoDB dependencies (kept for reference)
+# Flask-PyMongo==2.3.0
+# pymongo==4.6.1
