@@ -15,6 +15,7 @@ from flask import (
     request,
     jsonify,
     send_from_directory,
+    render_template,
 )  # Added send_from_directory
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename  # Added for file uploads
@@ -472,6 +473,9 @@ def login():
 
     return jsonify({"message": "Incorrect password"}), 401
 
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 # --- Profile Routes ---
 @app.route("/profile", methods=["GET"])
