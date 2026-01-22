@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM python:3.9-slim
 
 ENV SECRET_KEY='my_secret_key'
 ENV MONGO_URI='mongodb://172.20.0.2//movie_watchlist'
