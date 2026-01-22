@@ -1,0 +1,15 @@
+FROM python:3.9-slim-buster
+
+ENV SECRET_KEY='my_secret_key'
+ENV MONGO_URI='mongodb://172.20.0.2//movie_watchlist'
+
+WORKDIR /
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+COPY / .
+
+EXPOSE 5003
+CMD ["python", "app.py"]
