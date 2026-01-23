@@ -1861,6 +1861,6 @@ if __name__ == "__main__":
     # Consider setting use_reloader=False if you encounter problems.
     # Using port 5001 as intended for the chat service
     socketio.run(
-        #app, host="0.0.0.0", port=5003, debug=True, use_reloader=False
-        app, debug=True, use_reloader=False
+        app, host="0.0.0.0", port=5003, use_reloader=False
+        #app, debug=True, use_reloader=False
     )  # Added use_reloader=False for stability with eventlet
